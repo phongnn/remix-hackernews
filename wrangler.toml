@@ -1,0 +1,11 @@
+name = "remix-hackernews"
+main = "./build/index.js"
+account_id = "3531e6fbdbd8fbad00be8ed5acc3f701"
+workers_dev = true
+compatibility_date = "2022-06-22"
+
+[site]
+bucket = "./public"
+
+[build]
+command = "npm run build"

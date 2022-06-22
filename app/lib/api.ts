@@ -1,13 +1,11 @@
-import { request } from "undici";
-
 export async function fetchData(url: string) {
   console.log(`[fetchData] fetching data from ${url}`);
-  const res = await request(url);
-  if (res.statusCode === 200) {
-    return await res.body.json();
+  const res = await fetch(url);
+  if (res.status === 200) {
+    return await res.json();
   } else {
     // console.log("[fetchData] res = ", res);
-    throw new Response(null, { status: res.statusCode });
+    throw new Response(null, { status: res.status });
   }
 }
 

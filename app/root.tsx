@@ -2,7 +2,7 @@ import type {
   MetaFunction,
   LinksFunction,
   ErrorBoundaryComponent,
-} from "@remix-run/node";
+} from "@remix-run/cloudflare";
 import {
   Links,
   LiveReload,
