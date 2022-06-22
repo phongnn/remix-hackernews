@@ -1,8 +1,12 @@
 node_modules
+.env
 
 /.cache
+/public/build
+/functions/\[\[path\]\].js
+/functions/\[\[path\]\].js.map
+
+# other branches' build artifacts
 /build
 /dist
 /.mf
-/public/build
-.env
