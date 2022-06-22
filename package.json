@@ -5,7 +5,7 @@
     "build": "remix build",
     "dev": "cross-env NODE_ENV=development netlify dev",
     "start": "cross-env NODE_ENV=production netfily dev",
-    "clean": "rm -rf public/build && rm -rf .netlify"
+    "clean": "rm -rf .netlify public/build"
   },
   "dependencies": {
     "@netlify/functions": "^1.0.0",
